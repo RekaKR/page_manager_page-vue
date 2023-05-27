@@ -8,6 +8,7 @@
 <script>
 export default {
   props: {
+    //prop validation version; better error reporting
     page: {
       type: Object,
       default(rawProps) {

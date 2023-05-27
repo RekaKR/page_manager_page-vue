@@ -1,7 +1,7 @@
 <template>
   <a class="nav-link" :class="activeClasses" :href="page.link.url" :title="`This Link goes to the ${page.link.text} page`"
-    aria-current="page">{{
-      page.link.text }}
+    aria-current="page">
+    {{ page.link.text }}
   </a>
 </template>
 
@@ -12,10 +12,16 @@ export default {
     activeClasses() {
       return {
         active: this.isActive,
-        emphasize: this.Active
+        emphasize: this.isActive
       }
     }
   }
 
 }
 </script>
+
+<style scoped>
+.emphasize {
+  text-decoration: underline !important;
+}
+</style>

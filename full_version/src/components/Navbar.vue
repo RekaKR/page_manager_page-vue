@@ -5,7 +5,7 @@
 
       <ul class="navbar-nav me-auto mb-2 mb-lg-8">
         <li class="nav-item" v-for='(page, index) in pages' :key="index">
-          <navbar-linik :page="page" :isActive="activePage === index" @click.prevent="navLinkClick(index)"></navbar-linik>
+          <navbar-link :page="page" :isActive="activePage === index" @click.prevent="navLinkClick(index)"></navbar-link>
         </li>
       </ul>
 
